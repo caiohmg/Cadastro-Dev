@@ -31,7 +31,7 @@ addTechBtn.addEventListener("click", function (ev) {
   const techNameInput = createInput("techName-" + rowIndex, null, "techName");
 
   const expLabel = createLabel("Experiência:", "Experiência:");
-  const id1 = rowIndex + ".2" + "-anos";
+  const id1 = "0-2" + "-anos";
   const expRadio1 = createInput(
     id1,
     "0-2 anos",
@@ -39,7 +39,7 @@ addTechBtn.addEventListener("click", function (ev) {
     "radio"
   );
   const expLabel2 = createLabel("3-4 anos", id1);
-  const id2 = "3.4" + "-anos";
+  const id2 = "3-4" + "-anos";
   const expRadio2 = createInput(
     id2,
     "3-4 anos",
@@ -52,7 +52,7 @@ addTechBtn.addEventListener("click", function (ev) {
   const expLabel4 = createLabel("5+ anos", id3);
 
   const removeRowBtn = document.createElement("button");
-  removeRowBtn.type = "button";
+  removeRowBtn.type = " button ";
   removeRowBtn.innerText = "Remover";
   removeRowBtn.addEventListener("click", function () {
     stackInputs.removeChild(newRow);
